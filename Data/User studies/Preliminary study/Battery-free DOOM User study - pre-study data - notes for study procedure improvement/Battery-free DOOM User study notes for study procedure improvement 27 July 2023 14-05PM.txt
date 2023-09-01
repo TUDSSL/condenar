@@ -1,0 +1,241 @@
+Tasks for @acabrerizo :es: :
+- replace existing cranks with robust cranks for all consoles (the ones that Jasper suggested)
+- change menu for all consoles as follows:
+ - Make two main menu's in Settings `/`: and name them `Experiments` (containing all menu options as they are now) and `Other (do not access during Experiments)` (containing all other existing menu options)
+ - in `Experiments` sub-menu: Move `Experiment ID` to the top and rename it to `Experiment ID (set before "Start experiment")`
+ - in `Experiments` sub-menu: Remove `Pause enabled` option (it must be enabled for all three experiment types so we do not need it)
+ - in `Experiments` sub-menu: In `Presets` make only three menu's `Battery-powered/Crank input`, `Battery-free/No crank input` and `Battery-free/Crank input` - all three should correspond to the types of experiments as the name suggests
+ - in `Other (do not access during Experiments)`: move all remaining menu's (except `Experiments`) into this new one
+- Write down and share it with us a list of all parameters that are selectable in the Settings menu for each of the three Presets (for example `Battery-powered/Crank input`: `Screen brightness` = 3, `Fast CPU` = true, `Checkpoint creation enabled` = true, `Enter level episode` = 9, `Brightness` = 2, `Pause enabled` = true, etc. and add it to the repository readme
+- In presets of the console: 
+ - Change the default level of DOOM level 2 (instead of level 9)
+ - Modify all preset to shoot with a triggers always (no matter what experiment type we are executing)
+ - Rotation in Tetris with crank - remove it from all presets
+- Readme:
+ - explain what each of the `Settings` menu options mean and what are the possible parameters (why this is important? for example in `Settings` menu there is generic `Screen brightness` and DOOM `Brightness` - why two of them, how they affect each other? etc.)
+- Changes to https://gitlab.ewi.tudelft.nl/jdewinkel/battery-free-doom repository:
+ - Merge https://gitlab.ewi.tudelft.nl/jdewinkel/battery-free-doom and https://gitlab.ewi.tudelft.nl/jdewinkel/cpu-module into one with http://github.com/tudssl/condenar as the primary
+ - Convert log analysis file from C# to Python and add it to the repository
+ - in the repository create the following directory structure (and move respective files in the correct locations):
+
+/Hardware
+|-- Enclosure
+|    |-- [sub-folders if needed]
+|-- PCBs
+|    |-- Main board
+|    |    |-- [sub-folders if needed]
+|    |    |    |-- ...
+|    |-- Logger
+|    |    |-- [sub-folders if needed]
+|    |    |    |-- ...
+|    |-- CPU module
+|    |    |-- [sub-folders if needed]
+|    |    |    |-- ...
+|    |-- ...
+|-- README.md (At minimum the file should contain: the description of the file structure of the repository, hardware and software requirements, short description of what the project is about, list of contributors, and licence description)
+|-- LICENSE.md
+
+/Software
+|-- Logger
+|    |-- [sub-folders if needed]
+|    |    |-- ...
+|-- Console
+|    |-- [sub-folders if needed]
+|    |    |-- ...
+|-- ...
+|-- README.md (At minimum the file should contain: the description of the file structure of the repository, hardware and software requirements, short description of what the project is about, list of contributors, and licence description)
+|-- LICENSE.md
+
+/Data
+|-- User studies
+|    |-- Code
+|    |    |-- [Files for log analysis: both pre- and main studies]
+|    |    |-- [Files for survey analysis: both pre- and main studies]
+|    |-- Data
+|    |    |-- Pre-studies
+|    |    |    |-- [follow the same structure as `Main studies` below]
+|    |    |    |-- ...
+|    |    |-- Main studies
+|    |    |    |-- Survey
+|    |    |    |   |-- main_study_survey_data.csv
+|    |    |    |   |-- main_study_survey_questionnaire_source.jpg
+|    |    |    |   |-- readme.md (include comments about the data - in particular, which elements should be ignored)
+|    |    |    |-- Consent forms
+|    |    |    |   |-- main_study_consent_form_userID_1.pdf
+|    |    |    |   |-- main_study_consent_form_userID_2.pdf
+|    |    |    |   |-- ...
+|    |    |    |-- Interview notes
+|    |    |    |   |-- Interview notes (originals)
+|    |    |    |   |   |-- main_study_interview_note_original_userID_1.pdf
+|    |    |    |   |   |-- main_study_interview_note_original_userID_2.pdf
+|    |    |    |   |   |-- ...
+|    |    |    |   |-- Interview notes (transcripts)
+|    |    |    |   |   |-- main_study_interview_note_transcript_userID_1.txt
+|    |    |    |   |   |-- main_study_interview_note_transcript_userID_2.txt
+|    |    |    |   |   |-- ...
+|    |    |    |-- Console logs
+|    |    |    |   |-- main_study_console_log_userID_1.txt
+|    |    |    |   |-- main_study_console_log_userID_2.txt
+|    |    |    |   |-- ...
+|    |    |    |-- Results (We need to discuss this
+|    |    |    |   |-- result_1.jpg
+|    |    |    |   |-- result_2.jpg
+|    |    |    |   |-- ...
+|    |    |    |   |-- readme.md (it should present all results that are an outcome of the Code run using the .jpg images)
+|    |    |-- readme.md (describe the structure of the data repository)
+|-- Console benchmarks
+|    |-- Data
+|    |    |-- [data files for each benchmarked feature of the console]
+|    |-- Code
+|    |    |-- [code for analysis and plotting of benchmarked data]
+|-- README.md (At minimum the file should contain: the description of the file structure of the repository, hardware and software requirements, short description of what the project is about, list of contributors, and licence description)
+|-- LICENSE.md
+
+
+Proposed metrics (User logs) [CC @James Broadhead  @Jasper de Winkel  @Alejandro Cabrerizo ]:
+- Experiment length (from start to finish): all, per each three classes of experiments, per game type [min, max, median, average, boxplot]
+- Number of times the pause was pressed: all, per each three classes of experiments, per game type within each three classes of experiments [min, max, median, average, boxplot]
+- Elapsed time between two pause presses: all, per each three classes of experiments, per game type within each three classes of experiments [min, max, median, average, boxplot]
+- How often was the crank used: all, per each three classes of experiments, per game type within each three classes of experiments [min, max, median, average, boxplot]
+- Elapsed time between two uses of crank: all, per each three classes of experiments, per game type within each three classes of experiments [min, max, median, average, boxplot]
+- Number of times the console powered off: all, per each three classes of experiments, per game type within each three classes of experiments [min, max, median, average, boxplot]
+- Elapsed time between two console power off times: all, per each three classes of experiments, per game type within each three classes of experiments [min, max, median, average, boxplot]
+- Crank intensity as a function of capacitor state: all, per each three classes of experiments, per game type [min, max, median, average, boxplot]
+- Crank and button presses as a function of capacitor state: all, per each three classes of experiments, per game type [min, max, median, average, boxplot]
+- Crank intensity during operation and crank during off time: all, per each three classes of experiments, per game type [min, max, median, average, boxplot]
+- Average Console `On` time: all, per each three classes of experiments, per game type [min, max, median, average, boxplot]
+
+Proposed metrics (questionnaire) [CC @James Broadhead  @Jasper de Winkel  @Alejandro Cabrerizo ]:
+[for all data points apply hypothesis testing such as https://en.wikipedia.org/wiki/Wilcoxon_signed-rank_test, see also https://dl.acm.org/doi/pdf/10.1145/3291279.3339408 as good overview]
+- Background Questions [how frequently do you play video games? Have you previously played any first-person shooter style games? etc.]: all, per each three classes of experiments
+- Demographics Questions: all, per each three classes of experiments - connect Background and Demographics into a single plot
+- Tetris/Doom A/Doom B Game Experience Questions Group 1 [To what extent did you feel that the game was something you were experiencing? etc.]: per each three classes of experiments, per each sub-question [squash different game orders into one experiment class]
+- Tetris/Doom A/Doom B Game Experience Questions Group 2 [How mentally demanding was the task?]: all, per each three classes of experiments [squash different game orders into one experiment class]
+- System Evaluation [Which experience, DOOM Level A, DOOM Level B, or the Tetris, did you enjoy the most?]: all, per each three classes of experiments [squash different game orders into one experiment class]
+- System Evaluation [Did you pause any of the following games?]: sanity test for each individual experiment and match it to user logs data [squash different game orders into one experiment class]
+- System Evaluation [indicate your level of agreement with the provided statement]: [discuss, as there are too many questions here]
+
+Tasks for @James Broadhead :uk: 
+- add the following stickers to all consoles: 
+ - add sticker "ON/OFF" under the switch and mark which one is ON
+ - add sticker underneath the USB logger charging port "Logger"
+ - add sticker underneath the USB capacitor charging port "Capacitor"
+- Scan all interview notes (one per participant and share it via Mattermost)
+- Transcript all interview notes (one per participant and share it via Mattermost)
+- Scan all consent forms (one per participant and share it via Mattermost)
+- Add references to the papers introducing all questionnaires used by us in the study and add these references to Alejandro's MSc thesis draft
+- request update to the HREC application requesting recording of post-experiment interviews
+- Changes to Limesurvey structure:
+ - Screen "Battery-Free Game Console Experiment": remove "Ensure device capacitor is full before handing console to participant"
+ - Screen "Battery-Free Game Console Experiment": add "Did you take the voucher?"
+ - Screen "Battery-Free Game Console Experiment": Add text about taking the proper paper sheet for the experiment
+ - Screen "Battery-Free Game Console Experiment": add "Researcher Page" to the title and make title in a different color than the part of the survey for users
+ - Screen "Researcher Page": Add "Battery-Free Game Console Experiment" to the title
+ - Screen "Researcher Page": add field where we fill-in Lux values measured inside the room where the experiment is taking place
+ - Screen "Researcher Page": Change the names of each of the six options as follows:
+  - "(1) Battery - DOOM - Tetris" -> "Battery-powered/Crank input - DOOM X -> DOOM B -> Tetris"
+  - "(2) Battery - Tetris - DOOM" -> "Battery-powered/Crank input - Tetris -> DOOM X -> DOOM B"
+  - "(3) Power Level - DOOM - Tetris" -> "Battery-free/No crank input - Tetris -> DOOM X -> DOOM B" 
+  - "(4) Power Level - Tetris - DOOM" -> "Battery-free/No crank input - Tetris -> DOOM X -> DOOM B"
+  - "(5) Connected - DOOM - Tetris" -> "Battery-free/Crank input - DOOM X -> DOOM B -> Tetris"
+  - "(6) Connected - Tetris - DOOM" -> "Battery-free/Crank input - Tetris -> DOOM X -> DOOM B"
+ - Screen "Researcher Page": Remove all options about charging 
+ - Screen "Researcher Page": change "Which order are the participants following?" to "Experiment option"
+ - Screen "Researcher Page": add text in red "Now please pass the PC to the participant"
+ - Screen "Background questions": capitalise the title
+ - Screen "Background questions": change the gradation of questions in "On average, how frequently do you play video games?" (because "Rarely" is actually "A few times a month") to:
+  - At least once per day
+  - At least once per week
+  - At least once per month
+  - At least once per year
+  - Never
+ - Screen "Background questions": add images to each type of the game, including the last question ("Have you ever used a handheld device powered by harvested energy sources")
+ - Screen "Background questions": change "played the video game Tetris" to "Tetris"
+ - Screen "Device Introduction and Tutorial": photo needs to change after a new crank version
+ - Screen "Device Introduction and Tutorial": add new screen about playing with the device for few minutes [please pick which game the users will play and for how long]
+ - Screen "Tetris Introduction": replace an image with a screenshot from an actual device and map button presses to the elements on the image
+ - Screen "Tetris Introduction": add description about using the crank to rotate tetrominos
+ - Screen "Tetris Game Experience 1": add labels to intermediate answers for easier processing
+ - Screen "Tetris Game Experience 2": remove number on top of the slider or add (1) and (21) at extremes
+ - Screen "DOOM Game Introduction": "Doom interface" - explain the meaning of each symbols on the screen
+ - Screen "System Evaluation": "Enjoyed all games equally" - what if the user liked another subset of games? Use select instead
+ - Screen "System Evaluation": "indicate your level of agreement" - add labels to intermediate answers for easier processing
+
+
+## Notes discussed with James Broadhead on 2 August 2023
+
+Names of six options:
+- "(1) Battery - DOOM - Tetris" -> "Battery-powered/Crank input - DOOM X -> DOOM B -> Tetris"
+- "(2) Battery - Tetris - DOOM" -> "Battery-powered/Crank input - Tetris -> DOOM X -> DOOM B"
+- "(3) Power Level - DOOM - Tetris" -> "Battery-free/No crank input - Tetris -> DOOM X -> DOOM B" 
+- "(4) Power Level - Tetris - DOOM" -> "Battery-free/No crank input - Tetris -> DOOM X -> DOOM B"
+- "(5) Connected - DOOM - Tetris" -> "Battery-free/Crank input - DOOM X -> DOOM B -> Tetris"
+- "(6) Connected - Tetris - DOOM" -> "Battery-free/Crank input - Tetris -> DOOM X -> DOOM B"
+
+Suggestions for console design improvement (ask Jasper)
+- add sticker "ON/OFF" under the switch and mark which one is ON and which one is OFF
+- add sticker underneath the USB logger charging port "Logger"
+- add sticker underneath the USB capacitor charging port "Capacitor"
+- one SD card per console
+
+Suggestions for study protocol improvement:
+- Give users the ability to play the console for 2 minutes before the exact experiment starts (it should neither Tetris nor DOOM)
+- Inform the user during studies that she/he is doing something obviously wrong (e.g. not flipping the crank during cranking when taken out)
+- Keep the light always turned off in all experiments
+- Keep the same room for all user experiments (or keep the light intensity the same and keep the distance between the user and experimenter the same in each room)
+- Measure light intensity before the start of each experiment
+- Let the user restart the game her/himself when the game has reached the end within the 5-min experiment (i.e. do not restart the game ourselves)
+- Make sure that the questions for us - experiment executors - are not visible for the user (have two monitors to see at what part of the survey the user is now?)
+- Time for experiment should be approximate but longer than 5 minutes per game
+
+Suggestions for survey text:
+- Screen "Battery-Free Game Console Experiment": remove "Ensure device capacitor is full before handing console to participant"
+- Screen "Battery-Free Game Console Experiment": add "Did you take the voucher?"
+- Screen "Battery-Free Game Console Experiment": add "Researcher Page" and add color
+- Screen "Researcher Page": Add "Battery-Free Game Console Experiment" to the title
+- Screen "Researcher Page": Change the names of each of the six options to the same both in the (a) survey, (b) console (c) text description
+- Screen "Researcher Page": Remove options about charging 
+- Screen "Researcher Page": change "Which order are the participants following?" to "Experiment option"
+- Screen "Researcher Page": adjust text to the left or center for "Enter the participant ID code"
+- Screen "Researcher Page": add text in red "Please pass the PC to the participant"
+- Screen "Background questions": capitalise the title
+- Screen "Background questions": change the gradation of questions in "On average, how frequently do you play video games?" (because "Rarely" is actually "A few times a month")
+- Screen "Background questions": add images to each type of the game, including the last question ("Have you ever used a handheld device powered by harvested energy sources")
+- Screen "Background questions": change "played the video game Tetris" to "Tetris"
+- Screen "Device Introduction and Tutorial": add description of what each of the button does (as for example "left trigger" means nothing) - the description should be connected with the actual game play
+- Screen "Device Introduction and Tutorial": regarding "Powering the Device" - this text does not apply to "Battery-powered" version. What to do here?
+- Screen "Device Introduction and Tutorial": photo needs to change after a new crank version
+- Screen "Device Introduction and Tutorial": add section about playing with the device for few minutes: how are we going to organise this?
+- Screen "Tetris Introduction": replace an image with a screenshot from an actual device and map button presses to the elements on the image
+- Screen "Tetris Introduction": add description about using the crank to rotate tetriminions
+- Screen "Tetris Game Experience 1": "When interrupted" - but it does apply only to battery-free cases: how does it apply to battery-powered version?
+- Screen "Tetris Game Experience 1": add labels to intermediate answers for easier processing
+- Screen "Tetris Game Experience 2": remove number on top of the slider or add (1) and (21) at extremes
+- Screen "DOOM Game Introduction": "Doom interface" - explain the meaning of each symbols on the screen
+- Screen "System Evaluation": "Enjoyed all games equally" - what if the user liked another subset of games? Use select instead
+- Screen "System Evaluation": "indicate your level of agreement" - add labels to intermediate answers for easier processing
+
+- Add description about taking the proper paper sheet for the experiment
+
+- General question: what is the session expiry time (I just got a "We are sorry but your session has expired." message)
+
+Questions to James:
+- Where are the interview notes from each of the participants?
+- Where are the scanned and original consent forms from the participants?
+- Which study was done incorrectly from the one you did?
+- Please update the information here: https://docs.google.com/spreadsheets/d/1w6GNEQirsp3ajSFX0aNR6qLdUq1NTtvJ8QJ5Ifu0qQs/edit#gid=0
+- Where to store the data?
+- What is your availability between now and november?
+
+Questions to Alejandro:
+- Is the data analysis script added to GitHub
+- How will we know which part of the log corresponds to which game?
+- Why there are six presets and not three?
+- What is "Pause enabled" in "Experiments" section of the menu?
+- What is "GBC"?
+- Change the default level of DOOM to "X" (level 2)
+- Modify preset to shoot with a triggers always No matter what experiment type
+- Rotation in Tetris with crank - remove it from all presets
+
+Questions to Jasper:
+- Is the data analysis script added to GitHub

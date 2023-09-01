@@ -1,0 +1,7 @@
+Battery-free DOOM User study experiments - transcript from interview with Participant 7 - Interview date 10 July 2023 (Transcript done on 11 July 2023)
+
+- Post-experiment question to the user during interview about example of games where interaction is connected to gameplay: user had a hard time finding the answer, finally came up with the following idea: a football game where you use a crank to pass a ball, or generically, a sport game
+- Post-experiment question to the user during interview about self-observations during the interaction with the device: dark screen is disturbing, user used the words "hated", "did not enjoy it" to describe the screen; user did not use the crank during the gameplay as it did not cause a lot of difference to the play; when asked about the good parts of the console the user said "none" (sic!)
+- Post-experiment question to the user during interview about what would be the acceptable capacitor storage times for play: 55% should be enough for 5 minutes of play, when capacitor is at 10% it would be an indication to start cranking [NOTE: my notes are unreadable here so I tried to remember what the user was saying so let us not take this note into account in the analysis as it could be incorrect]
+- Observations during the user interaction with the device: the user tried to touch the screen once instead of pressing buttons
+- Note about the LimeSurvey: the user requested to change one answer - the user WAS playing Tetris before
