@@ -1,0 +1,7 @@
+ExitOnError 1
+r
+h
+loadfile "\\WSL.LOCALHOST\Ubuntu-18.04\home\alecamar\EP2\Project\SMART_Crank\Debug\SMART_Crank.hex"
+qc
+
+qc

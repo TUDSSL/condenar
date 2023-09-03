@@ -1,0 +1,23 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "cortex-debug",
+            "request": "launch",
+            "name": "Debug J-Link",
+            "cwd": "${workspaceRoot}",
+            "executable": "${workspaceRoot}/Debug/SMART_Crank.axf",
+            "serverpath": "/opt/SEGGER/JLink/JLinkGDBServerCLExe", 
+            "servertype": "jlink",
+            "device": "NHS3152",
+            "interface": "swd",
+            "ipAddress": "192.168.0.102",
+            "serialNumber": "",
+            "runToMain": false,
+            "armToolchainPath": "/usr/bin/",       
+        },
+    ]
+}
