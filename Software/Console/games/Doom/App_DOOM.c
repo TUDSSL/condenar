@@ -36,7 +36,7 @@ void DOOMEntryPoint(k_app* app){
     Z_Init();
     InitGlobals();
 
-    _g->gamma = k_GetSettingUInt32("/DOOM/Brightness",2);
+    _g->gamma = k_GetSettingUInt32("/Other/DOOM/Brightness",2);
     _g->gamma = 2;
 
     D_DoomMain();  

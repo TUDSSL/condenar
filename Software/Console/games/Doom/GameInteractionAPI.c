@@ -133,7 +133,7 @@ void DoAPITick(){
     k_input_state input;
     k_GetInput(&input,false);
 
-    if(k_IsBeingCranked() && k_GetSettingBool("/DOOM/Use crank",false)){
+    if(k_IsBeingCranked() && k_GetSettingBool("/Other/DOOM/Use crank",false)){
         doomBeingCranked = true;
         SetHealthDecayRate(-5);
             //No weapon selected?   
@@ -161,7 +161,7 @@ void DoAPITick(){
         }
     } 
 
-    if(input.buttonY != doom_buttonPausePressed && k_GetSettingBool("/Experiments/Pause enabled",true)){
+    if(input.buttonY != doom_buttonPausePressed && k_GetSettingBool("/Other/Experiments/Pause enabled",true)){
         if(input.buttonY){
             _g->paused = !_g->paused;
         }

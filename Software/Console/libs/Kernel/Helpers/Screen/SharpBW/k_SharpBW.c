@@ -182,7 +182,7 @@ void k_BeginScreenUpdate(){
     Screen_WaitForFrameDone(); //Wait for the screen to have been sent, to avoid overwriting the buffer
 
     #ifdef SEND_SCREEN_OVER_RTT
-    if(k_GetSettingBool("/Debugging/Send screen over RTT", false)){
+    if(k_GetSettingBool("/Other/Debugging/Send screen over RTT", false)){
         while (SEGGER_RTT_GetBytesInBuffer(0)!=0) {}; //Wait for the screen to be send to the PC
     }        
     #endif
@@ -248,7 +248,7 @@ void Screen_SendUpdateAsync(){
     uint8_t header[] = {0x69,0x69,0x06,0x09,0x19,0x13,0x69,0x68};
 
     #ifdef SEND_SCREEN_OVER_RTT
-    if(k_GetSettingBool("/Debugging/Send screen over RTT", false)){
+    if(k_GetSettingBool("/Other/Debugging/Send screen over RTT", false)){
         SEGGER_RTT_Write(0,header,sizeof(header));
         SEGGER_RTT_Write(0,screenFinalBuffer,sizeof(screenFinalBuffer));
     }           

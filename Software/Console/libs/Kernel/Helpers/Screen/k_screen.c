@@ -26,7 +26,7 @@ void k_EndScreenUpdate(bool checkpointsAllowed, bool showOverlays){
     if(showOverlays) k_DrawOverlays();
 
     #ifdef SEND_SCREEN_OVER_RTT
-    if(k_GetSettingBool("/Debugging/Send screen over RTT", false)){
+    if(k_GetSettingBool("/Other/Debugging/Send screen over RTT", false)){
         while (SEGGER_RTT_GetBytesInBuffer(0)!=0) {}; //Wait for the screen to be send to the PC
     }        
     #endif

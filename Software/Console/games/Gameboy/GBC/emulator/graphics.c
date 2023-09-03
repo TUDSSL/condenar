@@ -131,7 +131,7 @@ void gb_sdl_flip(struct gb *gb) {
 
      gbc_frameCount++;
 
-	if(k_GetSettingBool("/GBC/Slow down time when cranking", false) && k_IsBeingCranked()){
+	if(k_GetSettingBool("/Other/GBC/Slow down time when cranking", false) && k_IsBeingCranked()){
 		DelayMS(16);
 	}
      

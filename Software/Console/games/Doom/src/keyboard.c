@@ -53,7 +53,7 @@ void getKeys(uint8_t * keys)
     buttons|=(state.buttonB) * KEY_ALT;
     buttons|=(state.buttonA) * KEY_USE;
 
-    if(!k_GetSettingBool("/DOOM/Use crank",false) || !k_GetSettingBool("/Energy/No input when crank enabled",false)){
+    if(!k_GetSettingBool("/Other/DOOM/Use crank",false) || !k_GetSettingBool("/Other/Energy/No input when crank enabled",false)){
         buttons|=(state.triggerLeft|state.triggerRight) * KEY_FIRE;
     }
 

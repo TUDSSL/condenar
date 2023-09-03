@@ -28,7 +28,7 @@ bool k_isRecoveringFromACheckpoint(){
 volatile uint32_t checkpointRestoreStartTime; //Can't put this on the stack because it will get replaced when the context is restored
 void k_tryRecoverFromPowerDown(){
 
-    if(!k_GetSettingBool("/Intermittency/Checkpoint recovery enabled",true)){
+    if(!k_GetSettingBool("/Other/Intermittency/Checkpoint recovery enabled",true)){
         LOG_I("Checkpoint restore disabled. Skipping...");
         return;
     }

@@ -190,9 +190,9 @@ void k_DoEndOfFrameStuff(bool checkpointsAllowed){
         totalFPSsamplesGathered++;
     }    
 
-    if(checkpointsAllowed && k_GetSettingBool("/Intermittency/Checkpoint creation enabled", true)){
-        if((millis()-lastCheckpointTaken) > k_GetSettingUInt32("/Intermittency/Checkpoint interval (ms)",1000)){
-            if(k_GetSettingBool("/Intermittency/Only checkpoint while active",true)){
+    if(checkpointsAllowed && k_GetSettingBool("/Other/Intermittency/Checkpoint creation enabled", true)){
+        if((millis()-lastCheckpointTaken) > k_GetSettingUInt32("/Other/Intermittency/Checkpoint interval (ms)",1000)){
+            if(k_GetSettingBool("/Other/Intermittency/Only checkpoint while active",true)){
                 if(millis()-k_getLastTimeInputSeen() < k_GetSettingUInt32("/Intermittency/Active timeout",5000)){ //Only do checkpoints if there are any inputs
                     k_storeCurrentState();
                 }
@@ -207,14 +207,14 @@ void k_DoEndOfFrameStuff(bool checkpointsAllowed){
     //The first frame after a checkpoint is invalid, so don't set the backlight on yet
     if(frameCounter_NotCheckpointed > 1){
         float lightLevel = LightSensor_GetValue();
-        if(k_GetSettingBool("/Energy/Automatic brightness", false)){            
+        if(k_GetSettingBool("/Other/Energy/Automatic brightness", false)){            
             int backlightLevel = sqrt(lightLevel) *5;
             if(backlightLevel < 5) backlightLevel = 5;
             if(backlightLevel > 100) backlightLevel = 100;
             //LOG_I("Setting backlight to %d",backlightLevel);
             ChangeBacklightPWMValue(backlightLevel);           
         }else{
-            ChangeBacklightPWMValue(k_GetSettingUInt32("/Energy/Screen brightness", 3)*10);
+            ChangeBacklightPWMValue(k_GetSettingUInt32("/Other/Energy/Screen brightness", 3)*10);
         }
         if(frameCounter_NotCheckpointed % 10 == 0){
             UART_LOG_SetChannelData(LOG_CHANNEL_LIGHT_SENSOR, lightLevel);
@@ -224,13 +224,13 @@ void k_DoEndOfFrameStuff(bool checkpointsAllowed){
     
 
     //am_hal_pwrctrl_mcu_mode_select already caches the mode and checks if it is already set inside    
-    if (am_hal_pwrctrl_mcu_mode_select(k_GetSettingBool("/Energy/Fast CPU", false) ? AM_HAL_PWRCTRL_MCU_MODE_HIGH_PERFORMANCE : AM_HAL_PWRCTRL_MCU_MODE_LOW_POWER) != AM_HAL_STATUS_SUCCESS)
+    if (am_hal_pwrctrl_mcu_mode_select(k_GetSettingBool("/Other/Energy/Fast CPU", false) ? AM_HAL_PWRCTRL_MCU_MODE_HIGH_PERFORMANCE : AM_HAL_PWRCTRL_MCU_MODE_LOW_POWER) != AM_HAL_STATUS_SUCCESS)
     {
         LOG_E("Failed to set high performance mode!");
     }
 
     //am_hal_clkgen_clkout_enable already caches the mode and checks if it is already set inside    
-    if (am_hal_clkgen_clkout_enable(true, k_GetSettingBool("/Energy/Fast LCD refresh", false) ? CLKGEN_CLKOUT_CKSEL_HFRC2_24MHz : CLKGEN_CLKOUT_CKSEL_HFRC2_12MHz) != AM_HAL_STATUS_SUCCESS)
+    if (am_hal_clkgen_clkout_enable(true, k_GetSettingBool("/Other/Energy/Fast LCD refresh", false) ? CLKGEN_CLKOUT_CKSEL_HFRC2_24MHz : CLKGEN_CLKOUT_CKSEL_HFRC2_12MHz) != AM_HAL_STATUS_SUCCESS)
     {
         LOG_E("Failed to set LCD refresh rate!");
     }
@@ -244,9 +244,9 @@ void k_DoEndOfFrameStuff(bool checkpointsAllowed){
     }
     //End of power stuff
 
-     GPIO_SetLevel(60,k_GetSettingBool("/Energy/Infinite battery",false) && vBat > 3.0f); //Turn on the infinite battery if the setting is enabled and the battery is above 3.0V
+     GPIO_SetLevel(60,k_GetSettingBool("/Other/Energy/Infinite battery",false) && vBat > 3.0f); //Turn on the infinite battery if the setting is enabled and the battery is above 3.0V
 
-    int targetFrameTime = 1000/k_GetSettingUInt32("/Energy/Target refresh rate (Hz)", 20);
+    int targetFrameTime = 1000/k_GetSettingUInt32("/Other/Energy/Target refresh rate (Hz)", 20);
     int64_t toSleepUntil = (int64_t)k_lastFrameMillis + (targetFrameTime)-1;
 
     if(frameCounter%10 == 0){

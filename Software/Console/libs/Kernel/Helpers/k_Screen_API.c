@@ -263,12 +263,12 @@ void k_draw_Stats(){
 
     uint32_t fps = k_getLastFPS();
 
-    if(k_GetSettingBool("/Debugging/Overlay/Show FPS", false)){
+    if(k_GetSettingBool("/Other/Debugging/Overlay/Show FPS", false)){
         k_draw_FillRectangle(0,0,50,11,K_COLOR_WHITE);
         k_draw_DrawTextLeftAligned(2,2,1,"FPS:%02d",fps);
     }
 
-    if(k_GetSettingBool("/Debugging/Overlay/Show battery %%", true)){
+    if(k_GetSettingBool("/Other/Debugging/Overlay/Show battery %%", true)){
 
         float percent = (((k_GetVBat()*k_GetVBat())/(4.7*4.7))*107) - 7;
         if(percent<0) percent=0;
@@ -282,11 +282,11 @@ void k_draw_Stats(){
         k_draw_DrawTextLeftAligned(269 + 2+20+4-8*4,2,1,"-|%d%%|-",(int)percent);
     }
 
-     if(k_GetSettingBool("/Debugging/Overlay/Show crank status", true) && k_IsBeingCranked()){  
+     if(k_GetSettingBool("/Other/Debugging/Overlay/Show crank status", true) && k_IsBeingCranked()){  
         k_draw_DrawImage(298,13,20,20,1,Crank_Icon);
     }
 
-    if(k_GetSettingBool("/Debugging/Overlay/Show heap modifications", false)){
+    if(k_GetSettingBool("/Other/Debugging/Overlay/Show heap modifications", false)){
         int numRegions = 64;
         int regionsRectHeight = 10;
         int rectWidth=3;

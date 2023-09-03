@@ -89,7 +89,7 @@ void GameboyColor_Update(){
 	gb_input_set(&dbcData, GB_INPUT_A, state.buttonA);
 	gb_input_set(&dbcData, GB_INPUT_B, state.buttonB);
 
-	if(k_GetSettingBool("/GBC/Use crank as A-B input", false) && k_IsBeingCranked()){
+	if(k_GetSettingBool("/Other/GBC/Use crank as A-B input", false) && k_IsBeingCranked()){
 		if(millis()-GBCCrankLastTimeDirection > 800){
 			if(k_GetCrankDirection()){
 				gb_input_set(&dbcData, GB_INPUT_A, 1);
@@ -104,7 +104,7 @@ void GameboyColor_Update(){
 		}
 	}
 
-	if(k_GetSettingBool("/Experiments/Pause enabled",true)){
+	if(k_GetSettingBool("/Other/Experiments/Pause enabled",true)){
        gb_input_set(&dbcData, GB_INPUT_START, state.buttonY);
     }else{
 	   gb_input_set(&dbcData, GB_INPUT_START, 0);

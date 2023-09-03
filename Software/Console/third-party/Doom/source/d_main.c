@@ -522,8 +522,8 @@ void D_DoAdvanceDemo(void)
     if (!demostates[++_g->demosequence][_g->gamemode].func)
         _g->demosequence = 0;
 
-    if(k_GetSettingBool("/DOOM/Enable DEMO mode",false)){
-        uint32_t selectedDemo = k_GetSettingUInt32("/DOOM/DEMO mode selection",3);
+    if(k_GetSettingBool("/Other/DOOM/Enable DEMO mode",false)){
+        uint32_t selectedDemo = k_GetSettingUInt32("/Other/DOOM/DEMO mode selection",3);
         switch (selectedDemo)
         {
         case 1:
@@ -537,8 +537,8 @@ void D_DoAdvanceDemo(void)
             G_DeferedPlayDemo("demo3");       
             break;
         }
-    }else if(k_GetSettingBool("/DOOM/Force enter level", false)){
-        G_DeferedInitNew(sk_easy,1,k_GetSettingUInt32("/DOOM/Enter level episode",9));
+    }else if(k_GetSettingBool("/Other/DOOM/Force enter level", false)){
+        G_DeferedInitNew(sk_easy,1,k_GetSettingUInt32("/Other/DOOM/Enter level episode",9));
     }else{
         D_DrawTitle1("TITLEPIC");
     }
