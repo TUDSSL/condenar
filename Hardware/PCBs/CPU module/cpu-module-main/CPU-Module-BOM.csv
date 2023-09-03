@@ -1,0 +1,37 @@
+Item,Qty,Reference(s),Value,LibPart,Footprint,Datasheet,MPN
+1,2,"C1, C3",6pF,Device:C,Capacitor_SMD:C_0402_1005Metric,~,CC0402BRNPO9BN6R0
+2,6,"C2, C12, C13, C14, C15, C16",2.2 uF,Device:C,Capacitor_SMD:C_0201_0603Metric,~,GRM033R61A225KE47D
+3,7,"C4, C18, C19, C23, C29, C32, C33",100nF,Device:C,Capacitor_SMD:C_0402_1005Metric,~,GRM155R71C104KA88J
+4,2,"C5, C8",4pF DNP,Device:C,Capacitor_SMD:C_0402_1005Metric,~,CQ0402ARNPO9BN4R0
+5,4,"C6, C7, C9, C10",1uF,Device:C,Capacitor_SMD:C_0201_0603Metric,~,GRM033C81A105ME05D
+6,1,C11,4.7nF,Device:C,Capacitor_SMD:C_0201_0603Metric,~,GRM033R61E472KA12D
+7,9,"C17, C21, C22, C26, C27, C28, C30, C31, C34",1uF,Device:C,Capacitor_SMD:C_0402_1005Metric,~,CL05A105KP5NNNC
+8,1,C20,10uF,Device:C,Capacitor_SMD:C_0603_1608Metric,~,GRT188R61C106KE13D
+9,1,C24,2.2uF,Device:C,Capacitor_SMD:C_0603_1608Metric,~,GRM188R61H225KE11D
+10,1,C25,10uF,Device:C,Capacitor_SMD:C_0402_1005Metric,~,CL05A106MP8NUB8
+11,1,D1,ESD,Device:D_Zener,Diode_SMD:D_SOD-523,~,PESD5V0X1UB
+12,1,D2,"PMEG4050EP,115",Device:D_Schottky_Filled,Diode_SMD:D_SOD-128,~,"PMEG4050EP,115"
+13,1,D3,"BZX84J-C20,115",Device:D_Schottky_Filled,Diode_SMD:D_SOD-323F,~,"BZX84J-C20,115"
+14,1,J1,SWD_10,jaspers_lib:SWD_10,jaspers_footprints:ftsh-105-01-f-dv-k,http://infocenter.arm.com/help/topic/com.arm.doc.ddi0314h/DDI0314H_coresight_components_trm.pdf,ftsh-105-01-f-dv-k
+15,1,J3,52745-1097,jaspers_lib:52745-1097,jaspers_footprints:FPC_10_TOP,~,52745-1097
+16,1,J8,FH35C-25S-0.3SHW(50),Connector_Generic_MountingPin:Conn_01x25_MountingPin,jaspers_footprints:FH35C-25S-0.3SHW_2Rows-27Pins-1MP_P0.60mm_Horizontal,~,FH35C-25S-0.3SHW(50)
+17,2,"J10, J11",DF40C-100DP-0-4V,jaspers_lib:DF40C-100DP-0-4V,jaspers_footprints:DF40C-100DP,~,DF40C-100DP-0-4V
+18,1,L1,2.2 uH,Device:L,Inductor_SMD:L_0805_2012Metric,~,DFE201210U-2R2M=P2
+19,1,L2,LQH3NPH150MMEL,Device:L,jaspers_footprints:VLS6045EX,~,LQH3NPH150MMEL
+20,3,"R1, R5, R14",100k,Device:R,Resistor_SMD:R_0402_1005Metric,~,ERJ-2RKF1003X
+21,3,"R2, R3, R4",100 DNP,Device:R,Resistor_SMD:R_0201_0603Metric,~,CRCW0201100RFNED
+22,1,R6,0,Device:R,Resistor_SMD:R_0402_1005Metric,~,ERJ-2GE0R00X
+23,1,R7,DNP,Device:R,Resistor_SMD:R_0603_1608Metric,~,
+24,4,"R8, R9, R10, R15",10M,Device:R,Resistor_SMD:R_0402_1005Metric,~,RC0402FR-0710ML
+25,1,R11,100k,Device:R,Resistor_SMD:R_0603_1608Metric,~,ERJ-3EKF1003V
+26,1,R12,100,Device:R,Resistor_SMD:R_0603_1608Metric,~,CRCW0603100RFKEAHP
+27,1,R13,ERJP06F10R0V,Device:R,Resistor_SMD:R_0805_2012Metric,~,ERJP06F10R0V
+28,1,SW1,SW_Push,Switch:SW_Push,Button_Switch_SMD:SW_SPST_B3U-1000P,~,B3U-1000P
+29,1,U1,Apollo_4,jaspers_lib:Apollo_4,jaspers_footprints:Apollo4-BGA-156_13x12_5.0x5.0mm,,Apollo 4
+30,2,"U2, U7",SLG5NT1593V,jaspers_lib:SLG5NT1593V,jaspers_footprints:SLG5NT1593V,https://www.mouser.com/datasheet/2/665/silego_04052017_SLG5NT1593V-1105247.pdf,SLG5NT1593V
+31,1,U3,SN74AUP3G34RSE,jaspers_lib:SN74AUP3G34RSE,jaspers_footprints:Texas_RSE_8_UQFN,https://www.ti.com/lit/ds/symlink/sn74aup3g34.pdf,SN74AUP3G34RSE
+32,1,U4,LM3410XMF,jaspers_lib:LM3410XMF,Package_TO_SOT_SMD:SOT-23-5,https://www.ti.com/lit/ds/symlink/lm3410.pdf,LM3410XMF
+33,1,U5,MX25R6435FM2IH0,jaspers_lib:MX25R6435FM2IH0,Package_SO:SOP-8_5.28x5.23mm_P1.27mm,https://www.farnell.com/datasheets/2815329.pdf,MX25R6435FM2IH0
+34,1,U6,MB85RS4MT,jaspers_lib:MB85RS4MT,Package_SO:SO-8_5.3x6.2mm_P1.27mm,https://www.fujitsu.com/global/documents/products/devices/semiconductor/fram/lineup/MB85RS4MT-DS501-00053-1v0-E.pdf,MB85RS4MT
+35,1,Y1,32.768Hz,Device:Crystal,Crystal:Crystal_SMD_MicroCrystal_CM9V-T1A-2Pin_1.6x1.0mm,http://www.txccrystal.com/images/pdf/9ht12.pdf,9HT12-32.768KDZY
+36,1,Y2,ABM12W-32.0000MHZ,jaspers_lib:ABM12W-32.0000MHZ,jaspers_footprints:Crystal_SMD_Abracon_ABM12B-4Pin_1.6x1.2mm,https://abracon.com/Resonators/ABM12W.pdf,ABM12W-32.0000MHZ-6-D1X-T3 
