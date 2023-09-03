@@ -28,6 +28,7 @@ This README file provides an explanation of the console settings, including thei
 - **Fast LCD refresh:** Increases the LCD refresh rate for improved performance (default: false).
 - **Target refresh rate (Hz):** Sets the target screen refresh rate (default: 20Hz).
 - **No input when crank enabled:** Prevents default input when the crank is active (default: false).
+- **Pause enabled:** Enables pausing (default: true).
 
 ## Debugging Settings
 
@@ -50,10 +51,6 @@ This README file provides an explanation of the console settings, including thei
 
 - **Use crank as A-B input:** Allows using the crank as an A-B input for GBC games (default: false).
 - **Slow down time when cranking:** Slows down the game time while cranking (default: true).
-
-## General settings
-
-- **Pause enabled:** Enables pausing (default: true).
 
 ## Experiments Settings
 
