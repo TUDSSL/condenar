@@ -49,7 +49,7 @@ This README file provides an explanation of the console settings, including thei
 
 ## Game Boy Color (GBC) Settings
 
-- **Use crank as A-B input:** Allows using the crank as an A/B button input (One cranking direction pulses the A button and the other one the B button) for GBC games (default: false).
+- **Use crank as A-B input:** Allows using the crank as an A/B button input (One cranking direction pulses the A button and the other one, the B button) for GBC games (default: false).
 - **Slow down time when cranking:** Slows down the game time while cranking (default: true).
 
 ## Experiments Settings
