@@ -1,0 +1,12 @@
+Battery-free DOOM User study experiments - transcript from interview with Participant 8 - Interview date 10 July 2023 (Transcript on 11 July 2023)
+
+- Observations during the user interaction with the device: 
+- (a) user was pressing the game console 90 degrees flipped from the table when charging or pressing it flat when playing during cranking to charge the console, in both cases the user did not look at the screen at all
+- (b) user often forgot to charge the device while playing as the user was so immersed in the gameplay (console died twice during Tetris play at the beginning and in the middle of the gameplay and at the end of DOOM B gameplay) 
+- Post-experiment question to the user during interview about self-observations during the interaction with the device: worst aspect of the console is that it discharges quickly (5 minute charge is too short); good aspects of the console - none (in a sense that it looked like a normal console); console too big to hold in a single hand; user was immersed in the game for 1 to 2 minutes straight; a good design would be no cranking for at least 5 to 10 minutes
+- Note about the LimeSurvey: the user requested to change one answer - the user WAS playing Tetris before
+
+Points for consideration for next user's experiments:
+- light conditions are uneven, User 1 on July 11 2023 played in lights turned on, and user 2 on the same day with lights off causing different perception of gameplay
+- User 2 was confused about the description of the crank function on the paper cheatsheet (when crank does not generate energy then the description is incorrect)
+- There is something weird about the question about Tetris previous play in the LimeSurvey (users are requesting to change their answer post-experiment): it needs to be checked
