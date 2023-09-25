@@ -21,5 +21,3 @@ The crank is made out of 3 pieces: CrankBase, CrankHandle, and Crank Bottom.
 The best way to print each of the parts of the crank (for maximum strength) can be seen in the picture below:
 ![](https://github.com/TUDSSL/condenar/blob/master/Hardware/Enclosure/HowToPrint.png)
 Preliminary study cranks have been printed using Cura 5.3, using the default profiles, with 100% infill. 
- 
-README.md
