@@ -16,7 +16,7 @@ After uploading a new build, it is usually recommended to go to the settings men
 - Pin definitions and other configs are placed in platform/
 - lib/ contains several system modules:
   - DownloadMode: Handles the upload of new data to the external flash of the console. You can use the "StorageManager" program (in /Software/) to upload pictures, game assets, and any other kind of file to the console.
-  - Kernel: All aspects of the kernel are split into its own separate source file within the 'Helpers' directory. To use Kernel call, you only need to include the "Kernel.h" header file.
+  - Kernel: All aspects of the kernel are split into its own separate source file within the 'Helpers' directory. To use Kernel call, you only need to include the "Kernel.h" header file. More detailed information can be found in https://github.com/TUDSSL/condenar/blob/master/Software/Console/libs/Kernel/README.md
   - MainMenu: Small apps that renders the main menu. It is needed, as the Kernel expects it to exist in the build and it is the default idle application.
   - Settings: Application that lets the user view and modify settings on the go, without recompiling the firmware. The system will work without this (This is just the UI), but the user won't be able to change any settings.
   - SMART_Crank: Independent application that runs in the MCU of the crank module. It needs the NXP SDK/IDE (V1.0) to be installed to build it.
