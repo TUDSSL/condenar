@@ -317,7 +317,7 @@ void ExecuteCustomAction(char* actionPath){
 	}else if(strcmp(actionPath,"/Experiments/Presets/Battery-powered | Crank input")==0){
 		k_SetSettingBool("/Other/Energy/Infinite battery",true);		
 		k_SetSettingBool("/Other/DOOM/Use crank",true);
-		k_SetSettingBool("/Other/GBC/Use crank as A-B input",true);
+		k_SetSettingBool("/Other/GBC/Use crank as A-B input",false);
 		k_SetSettingBool("/Other/GBC/Slow down time when cranking",true);
 		k_SetSettingBool("/Other/Debugging/Overlay/Show battery %%",true);
 		k_SetSettingBool("/Other/Experiments/Pause enabled",true);	
@@ -330,9 +330,9 @@ void ExecuteCustomAction(char* actionPath){
 		k_SetSettingBool("/Other/Experiments/Pause enabled",true);	
 	}else if(strcmp(actionPath,"/Experiments/Presets/Battery-free | Crank input")==0){
 		k_SetSettingBool("/Other/Energy/Infinite battery",false);		
-		k_SetSettingBool("/Other/DOOM/Use crank",false);
+		k_SetSettingBool("/Other/DOOM/Use crank",true);
 		k_SetSettingBool("/Other/GBC/Use crank as A-B input",false);
-		k_SetSettingBool("/Other/GBC/Slow down time when cranking",false);
+		k_SetSettingBool("/Other/GBC/Slow down time when cranking",true);
 		k_SetSettingBool("/Other/Debugging/Overlay/Show battery %%",true);
 		k_SetSettingBool("/Other/Experiments/Pause enabled",true);	
 	}else if(strcmp(actionPath,"/Experiments/Presets/D (%% & crank)")==0){
