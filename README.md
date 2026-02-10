@@ -29,7 +29,38 @@ A range of statistical tests were used to assess the significance of effects in 
 ### Qualitative Analysis
 We analysed post-study interviews using inductive thematic analysis, following the six-phase guidance proposed by Braun and Clarke [10] . The interview protocol was co-developed by the first and last authors and reviewed by the fourth author to ensure alignment with the study goals. Interviews were conducted by the first and last authors, and transcripts were produced and analysed by the first author. Coding was inductive, with initial descriptive and in vivo codes generated through repeated engagement with participants’ responses.Codes were iteratively refined and grouped into broader patterns through multiple rounds of analysis, with discussions between the first and fourth authors to clarify code meanings and assess coherence and distinction between themes. 
 
+## How to Cite This Work
 
+The results of this project have been published in a peer-reviewed academic publication (from which all technical figures in this file originate). Details of the publication are as follows.
 
+* **Authors and the project team:** [James Scott Broadhead](https://scholar.google.com/citations?user=sMDFHlMAAAAJ), [Jasper de Winkel](https://jasperdewinkel.com), [Alejandro Cabrerizo Martinez de La Puente](https://www.linkedin.com/in/alejandro-cabrerizo-03780b136), [Himanshu Verma](https://vermahimanshu.com), [Przemysław Pawełczak](http://www.pawelczak.net)
+* **Publication title:** _Connecting Power and Play: Investigating Interactive Energy Harvesting in Battery-Free Gaming_
+* **Pulication venue:** [Proceedings of the 2026 CHI Conference on Human Factors in Computing Systems (CHI '26), April 13-17, 2026, Barcelona, Spain](https://dl.acm.org/)
+* **Link to publication:** https://doi.org/10.1145/3772318.3790831 (Open Access)
+* **Link to ACM UbiComp 2020 conference presentation video:** https://www.youtube.com/watch?v=XxjrTHBFBSM
 
+To cite this publication please use the following BiBTeX entry.
 
+```
+@article{broadhead:chi:2026:turner,
+  title = {Connecting Power and Play: Investigating Interactive Energy Harvesting in Battery-Free Gaming},
+  author = {James Scott {Broadhead} and Jasper {de Winkel} and Alejandro Cabrerizo Martinez {de La Puente} and Himanshu {Verma} and Przemys{\l}aw {Pawe{\l}czak}},
+  journal = {Proc. ACM Conference on Human Factors in Computing Systems (ACM CHI)},
+  month =  apr # " 13--17",
+  year = {2026},
+  pages = {--},
+  address = {Barcelona, Spain},
+  publisher = {ACM}
+}
+```
+
+## Related Websites
+
+* **Project source code:** https://github.com/tudssl/engage
+* **Project announcement website:** https://www.freethegameboy.info
+
+## Copyright
+
+Copyright (C) 2026 TU Delft Embedded Systems Group/Sustainable Systems Laboratory.
+
+MIT License or otherwise specified. See [license](https://github.com/TUDSSL/ENGAGE/blob/master/LICENSE) file for details.
