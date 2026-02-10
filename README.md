@@ -37,7 +37,7 @@ The results of this project have been published in a peer-reviewed academic publ
 * **Publication title:** _Connecting Power and Play: Investigating Interactive Energy Harvesting in Battery-Free Gaming_
 * **Pulication venue:** [Proceedings of the 2026 CHI Conference on Human Factors in Computing Systems (CHI '26), April 13-17, 2026, Barcelona, Spain](https://dl.acm.org/)
 * **Link to publication:** https://doi.org/10.1145/3772318.3790831 (Open Access)
-* **Link to ACM UbiComp 2020 conference presentation video:** https://www.youtube.com/watch?v=XxjrTHBFBSM
+* **Link to ACM CHI 2026 conference presentation video:** https://www.youtube.com/watch?
 
 To cite this publication please use the following BiBTeX entry.
 
@@ -63,4 +63,4 @@ To cite this publication please use the following BiBTeX entry.
 
 Copyright (C) 2026 TU Delft Embedded Systems Group/Sustainable Systems Laboratory.
 
-MIT License or otherwise specified. See [license](https://github.com/TUDSSL/ENGAGE/blob/master/LICENSE) file for details.
+MIT License or otherwise specified. See [license](https://github.com/TUDSSL/CONDENAR/blob/master/LICENSE) file for details.
