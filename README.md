@@ -1,4 +1,4 @@
-# condenar
+# TURNER Games Console
 
 ## Folder structure
 - Data: Contains the data used in the user studies along with the scripts necessary to analyze them
