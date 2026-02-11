@@ -77,10 +77,6 @@ To cite this publication please use the following BiBTeX entry.
 ```
 -->
 
-## Related Websites
-
-
-
 ## Copyright
 
 Copyright (C) 2026 TU Delft Embedded Systems Group/Sustainable Systems Laboratory.
