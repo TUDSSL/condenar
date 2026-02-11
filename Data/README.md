@@ -12,7 +12,8 @@ Useful commands and other related console documentation.
   
 ### [MainStudy](https://github.com/TUDSSL/condenar/tree/master/Data/MainStudy)
 
-
-
 Raw data from the study can be found in the [Data](https://github.com/TUDSSL/condenar/tree/master/Data/MainStudy/Data) folder. This includes: 
+
 - [Log Data](https://github.com/TUDSSL/condenar/tree/master/Data/MainStudy/Data/Log_Data)
+
+Code used to analyse the data can be found in the [Code](https://github.com/TUDSSL/condenar/tree/master/Data/MainStudy/Code) folder. This includes: 
