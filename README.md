@@ -25,7 +25,9 @@ In a subsequent mixed-methods study (N = 60), we explored the influence of energ
 
 ## TURNER System Description
 
-
+<p align="center">
+<img src="https://github.com/tudssl/condenar/blob/master/Doc-images/truner_console_illustration.jpg" width="800px">
+</p>
 
 
 
