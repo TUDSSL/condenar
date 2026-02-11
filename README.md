@@ -3,7 +3,10 @@
 This is the official public repository for the TURNER battery-free gaming console.
 
 <img src="https://github.com/tudssl/condenar/blob/master/Doc-images/truner_console_illustration.jpg" width="800px">
-*Figure 1. The battery-free TURNER console in action. Turning the crank enables weapon firing in DOOM while simultaneously generating energy to charge TURNER’s energy-storage capacitor. The capacitor’s charging state is shown by a small indicator at the top-right of the LCD panel. TURNER integrates solar energy harvesting, follows the form factor of a modern handheld game console, and features the standard “ABXY” button configuration. The current implementation weighs 509 g; the casing measures 24 cm × 14 cm × 3 cm, and the crank measures 2 cm × 6.5 cm × 2 cm.*
+
+<p align="center">
+  <sub><strong>Figure 1.</strong> The battery-free TURNER console in action. Turning the crank enables weapon firing in DOOM while generating energy to charge TURNER’s energy-storage capacitor.</sub>
+</p>
 
 
 ## System Design Rationale
