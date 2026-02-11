@@ -2,7 +2,8 @@
 
 Each folder here is its own different PCB:
 
-- CPUModule: Module that hold the main processor, flash and display controller.
+- [CPUModule](https://github.com/TUDSSL/condenar/tree/master/Hardware/PCBs/CPUModule): Module that hold the main processor, flash and display controller.
+  
 - Logger: Optional module that can be used to record experiment data without affecting the system.
 - Mainboard: Main PCB, where all the different modules are connected.
 - PowerModules: The different power harvesting modules that generate power for the console. Up to two of them can be connected at the same time to the console.
