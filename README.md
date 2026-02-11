@@ -2,11 +2,11 @@
 
 This is the official public repository for the TURNER battery-free gaming console.
 
+<img src="https://github.com/tudssl/condenar/blob/master/Doc-images/truner_console_illustration.jpg" width="800px">
+
 ## System Design Rationale
 
 Battery-free computer gaming offers a vision of sustainable interaction in which games run on hardware that does not require a battery, yet this approach introduces uncertainty due to frequent power failures. Rather than viewing these failures as limitations, this work examines how integrating energy harvesting with application design can encourage users to reimagine and work with such failures, thus shaping behaviour and supporting device use. We present TURNER, a state-of-the-art modular battery-free games console powered by a hand crank and solar cells, created as a research probe to study how energy harvesting mediates the relationship between power and interaction. 
-
-<img src="https://github.com/tudssl/condenar/blob/master/Doc-images/truner_console_illustration.jpg" width="800px">
 
 In a subsequent mixed-methods study (N = 60), we explored the influence of energy harvesting on gameplay. Findings show significant variations in harvesting strategies, with interviews surfacing strategies for creating applications that respond to and build on the patterns of system power failure, the ergonomics of energy harvesting, and the value of embedding energy generation into play. Our work offers insights for interactive, sustainable battery-free computers.
 
@@ -17,6 +17,9 @@ In a subsequent mixed-methods study (N = 60), we explored the influence of energ
 - [/Software](https://github.com/tudssl/condenar/tree/master/Software): The folder contains the software used in the TURNER console (including console firmware, apps, and logging software).
 
 ## TURNER System Description
+
+
+
 
 
 ## TURNER User Study
@@ -58,8 +61,7 @@ To cite this publication please use the following BiBTeX entry.
 
 ## Related Websites
 
-* **Project source code:** https://github.com/tudssl/engage
-* **Project announcement website:** https://www.freethegameboy.info
+
 
 ## Copyright
 
