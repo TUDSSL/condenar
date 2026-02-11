@@ -1,6 +1,6 @@
 # PCBs
 
-Each folder here is its own different PCB:
+Each of the following folders has an associated PCB:
 
 - [CPUModule](https://github.com/TUDSSL/condenar/tree/master/Hardware/PCBs/CPUModule): Module that hold the main processor, flash and display controller.
   
