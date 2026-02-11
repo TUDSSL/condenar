@@ -57,6 +57,8 @@ The results of this project have been published in a peer-reviewed academic publ
 * **Link to publication:** https://doi.org/10.1145/3772318.3790831 (Open Access)
 * **Link to ACM CHI 2026 conference presentation video:** https://www.youtube.com/watch?
 
+
+<!--
 To cite this publication please use the following BiBTeX entry.
 
 ```
@@ -71,6 +73,7 @@ To cite this publication please use the following BiBTeX entry.
   publisher = {ACM}
 }
 ```
+-->
 
 ## Related Websites
 
