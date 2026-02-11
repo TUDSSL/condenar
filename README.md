@@ -26,7 +26,11 @@ In a subsequent mixed-methods study (N = 60), we explored the influence of energ
 ## TURNER System Description
 
 <p align="center">
-<img src="https://github.com/tudssl/condenar/blob/master/Doc-images/truner_console_illustration.jpg" width="800px">
+<img src="[https://github.com/tudssl/condenar/blob/master/Doc-images/truner_console_illustration.jpg](https://github.com/TUDSSL/condenar/blob/master/Doc-images/deconstructed_system_image.jpg)" width="800px">
+</p>
+
+<p align="center">
+  <sub><strong>Figure 2.</strong> TURNER system implementation: (A) back of the COM50H5M81XLC transflective LCD screen; (B) logging module using an Espressif Systems ESP32 PICO Series microcontroller; (C) Central Processing Unit (CPU) module using an Ambiq Apollo4 MCU; (D) power management; (E) logging module battery; (F) solar module implemented around the Analog Devices LTC3129 Maximum Power Point Tracking (MPPT) buck-boost energy harvester; (G) crank module; (H) 6V 1.5F Kyocera AVX-SCM supercapacitor (SCMR22H155PSBB0); (I) ambient light sensor; (J) energy module connection points; (K) “ABXY” buttons; (L) solar panel connection on the front of the system casing. Eight ExCellLight EXL10-4V170 high-performance solar cells (50 mm × 20 mm each) are deployed; (M) joystick; (N) Universal Serial Bus (USB) port; (O) left trigger button; (P) right trigger button. The battery is used <em>only</em> to power the logging module and during the battery-powered console configuration experimental condition.</sub>
 </p>
 
 
