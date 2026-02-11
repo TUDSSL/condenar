@@ -37,7 +37,7 @@ In a subsequent mixed-methods study (N = 60), we explored the influence of energ
 
 ## TURNER User Study
 
-The user study of TURNER employed a mixed-methods approach, combining console log data, questionnaire responses, and post-study interviews.
+The user study of TURNER employed a mixed-methods approach, combining console log data, questionnaire responses, and post-study interviews. The study was [pre-registed at Open Science Framework (OSF)](http://osf.io/7fp2w). 
 
 ### Quantitative Analysis
 
