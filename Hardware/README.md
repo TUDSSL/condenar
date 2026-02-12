@@ -1,4 +1,4 @@
-# Folder Structure
+# Files Relating to the Hardware Desing of the TURNER Console
 
 This folder contains the hardware design files for the project, including component lists, enclosure designs, and printed circuit board layouts required to manufacture and assemble the system. Here you will find: 
 
