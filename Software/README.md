@@ -1,4 +1,4 @@
-# Folder structure
+# Files Relating to the Software of the TURNER Console
 
 This folder contains the project’s software components, including firmware, logging modules, desktop tools, storage utilities, and log processing scripts.
 
