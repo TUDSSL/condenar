@@ -1,2 +1,1 @@
-# condenar
-Battery-Free DOOM Console
+This folder contains Python scripts for analysing the raw TURNER user study data. 
