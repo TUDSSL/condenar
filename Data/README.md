@@ -15,6 +15,7 @@ In the [Documentation](https://github.com/TUDSSL/condenar/tree/master/Data/Docum
 In the [MainStudy](https://github.com/TUDSSL/condenar/tree/master/Data/MainStudy) folder you will find raw data from the study in the folder [Data](https://github.com/TUDSSL/condenar/tree/master/Data/MainStudy/Data). This includes: 
 
 - [Log Data](https://github.com/TUDSSL/condenar/tree/master/Data/MainStudy/Data/Log_Data)
+- [NASA-TLX Workload Data](https://github.com/TUDSSL/condenar/tree/master/Data/MainStudy/Data/NASA-TLX)
 
 Code used to analyse the data can be found in the [Code](https://github.com/TUDSSL/condenar/tree/master/Data/MainStudy/Code) folder. This includes: 
 
