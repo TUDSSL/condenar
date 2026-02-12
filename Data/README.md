@@ -12,10 +12,11 @@ In the [Documentation](https://github.com/TUDSSL/condenar/tree/master/Data/Docum
   
 ### MainStudy
 
-In the [MainStudy](https://github.com/TUDSSL/condenar/tree/master/Data/MainStudy) folder you will find raw data from the study in the folder [Data](https://github.com/TUDSSL/condenar/tree/master/Data/MainStudy/Data). This includes: 
+Data and code relating to the TURNER user study can be found in the [MainStudy](https://github.com/TUDSSL/condenar/tree/master/Data/MainStudy) folder. Here you will find raw data from the study in the folder [Data](https://github.com/TUDSSL/condenar/tree/master/Data/MainStudy/Data). This includes: 
 
-- [Log Data](https://github.com/TUDSSL/condenar/tree/master/Data/MainStudy/Data/Log_Data)
-- [NASA-TLX Workload Data](https://github.com/TUDSSL/condenar/tree/master/Data/MainStudy/Data/NASA-TLX)
+- [Log_Data](https://github.com/TUDSSL/condenar/tree/master/Data/MainStudy/Data/Log_Data): Raw log data collected during user interactions.  
+- [SurveyResults](https://github.com/TUDSSL/condenar/tree/master/Data/MainStudy/Data/SurveyResults): Complete survey results collected during the study. 
+- [NASA-TLX](https://github.com/TUDSSL/condenar/tree/master/Data/MainStudy/Data/NASA-TLX): Isolated NASA-TLX survey results from the study. Isolated for efficiency of data processing.  
 
 Code used to analyse the data can be found in the [Code](https://github.com/TUDSSL/condenar/tree/master/Data/MainStudy/Code) folder. This includes: 
 
