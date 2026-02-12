@@ -19,9 +19,9 @@ In a subsequent mixed-methods study (N = 60), we explored the influence of energ
 
 ## Repository Structure
 
-- [/Data](https://github.com/tudssl/condenar/tree/master/Data): This folder contains the data and data analysis scripts used in the TURNER user study.
 - [/Hardware](https://github.com/tudssl/condenar/tree/master/Hardware): This folder contains the source files for the hardware used in this project.
 - [/Software](https://github.com/tudssl/condenar/tree/master/Software): The folder contains the software used in the TURNER console (including console firmware, apps, and logging software).
+- [/Data](https://github.com/tudssl/condenar/tree/master/Data): This folder contains the data and data analysis scripts used in the TURNER user study.
 - [/Doc-images](https://github.com/TUDSSL/condenar/tree/master/Doc-images): This folder contains images of the TURNER console. 
 
 ## TURNER System Description
