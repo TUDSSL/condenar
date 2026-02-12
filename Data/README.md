@@ -12,7 +12,7 @@ In the [Documentation](https://github.com/TUDSSL/condenar/tree/master/Data/Docum
   
 ### MainStudy
 
-In the [MainStudy](https://github.com/TUDSSL/condenar/tree/master/Data/MainStudy) folder you will find raw data from the study can be found in the [Data](https://github.com/TUDSSL/condenar/tree/master/Data/MainStudy/Data) folder. This includes: 
+In the [MainStudy](https://github.com/TUDSSL/condenar/tree/master/Data/MainStudy) folder you will find raw data from the study in the folder [Data](https://github.com/TUDSSL/condenar/tree/master/Data/MainStudy/Data). This includes: 
 
 - [Log Data](https://github.com/TUDSSL/condenar/tree/master/Data/MainStudy/Data/Log_Data)
 
